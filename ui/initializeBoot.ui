@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Wizard</class>
+ <widget class="QWizard" name="Wizard">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>540</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>720</width>
+    <height>540</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>540</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>引导程序</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <property name="wizardStyle">
+   <enum>QWizard::NStyles</enum>
+  </property>
+  <widget class="QWizardPage" name="wizardPageWelcome">
+   <property name="title">
+    <string>欢迎!</string>
+   </property>
+   <attribute name="pageId">
+    <string notr="true">0</string>
+   </attribute>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>500</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>500</width>
+      <height>140</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>680</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="title">
+     <string>免责条款:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTextBrowser" name="textBrowser_3">
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.本宣传资料文字、数据、视频、图片仅供参考，不作为邀约或承诺，买卖双方权利、义务以合同为准。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.本宣传资料系公司关于项目规划意向的概念展示，非最终规划方案，对买卖双方没有约束力，因展示工艺、材质、比例和幅面限制等条件所限，与实景可能存在一定差异，敬请留意。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.本宣传资料建筑立面、园区景观园林以我公司现阶段规划方案为依据进行制作，仅作为项目规划示意，与最终交付标标准不同，最终交付结果以政府部门核准文件及买卖双方订立的商品房买卖合同约定为准。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.本宣传资料对项目外周围环境、交通、公共设施的地理关系仅为示意，不意味本公司对此做出任何承诺。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.本宣传资料园区景观园林、楼梯外立面颜色、装饰结构线条、空调机等均与最终交付标准不同，最终交付结果以政府部门核准文件及买卖双方订立的商品房买卖合同约定为准。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6.区位教育配套：本广告对周边学校的表述，仅供参考信息来源于百度百科，(1)学校的名称、建成时间、开办性质、办学规模、学位设置、开学时间、招生条件、收费标准及招生区域划定等均存在未确定或者调整可能，出卖人对此不作任何承　诺，最终须以政府部门或相关教育单位的最新政策为准；(2)交通、市政配套：本广告对项目周边交通情况、公园等配套设施等信息来源于2021年11月30日，市政配套信息来源于2021年11月30日，市政配套设置不排除因政府规划、政策规定　及出卖人未能控制的原因而发生变化，本页中对项目周围环境、交通及其它公共设施的介绍，旨在提供相关参考信息，不视为本公司对此作出了要约或承诺。(3)距离的信息表述：该距离查询来源于百度地图，所示距离明确为直线距离。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7.图片信息：本宣传资料中部分图片素材来源于网络，无法核实真实出处，如涉及侵权请联系开发商我们将及时删除。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8.本宣传资料一切未有例举事项或更改，恕不另行通知。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>我同意</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="wizardPageSelectFilePath">
+   <property name="title">
+    <string>选择程序文件位置</string>
+   </property>
+   <property name="subTitle">
+    <string/>
+   </property>
+   <attribute name="pageId">
+    <string notr="true">1</string>
+   </attribute>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>500</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>500</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>程序文件需要至少20GB的存储空间</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>选择路径...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="wizardPageRegisterCode">
+   <property name="title">
+    <string>激活设备</string>
+   </property>
+   <attribute name="pageId">
+    <string notr="true">2</string>
+   </attribute>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>500</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>680</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>激活过程中请保持联网</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>激活码：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>激活设备</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="wizardPageDownload">
+   <property name="title">
+    <string>下载资源文件</string>
+   </property>
+   <attribute name="pageId">
+    <string notr="true">3</string>
+   </attribute>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>500</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>680</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>500</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>正在下载资源文件</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;正在下载程序资源文件，下载速度和您的网速有关。下载可能会持续较长时间，请耐心等待。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QProgressBar" name="progressBar">
+         <property name="value">
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="text">
+          <string>正在下载</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWizardPage" name="wizardPageSuccess">
+   <property name="title">
+    <string>安装完成!</string>
+   </property>
+   <attribute name="pageId">
+    <string notr="true">4</string>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
